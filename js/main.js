@@ -34,14 +34,14 @@ $(window).on('load', function() {
 	--------------------*/
 	$('.set-bg').each(function() {
 		var bg = $(this).data('setbg');
-		$(this).css('background-image', 'url(' + bg + ')');
+		$(this).css('background-image', 'url(' + bg + ')');		
 	});
 
 
 	/*------------------
 		Hero Slider
 	--------------------*/
-	$('.hero-slider').owlCarousel({
+	$('.about-game-slider').owlCarousel({
 		loop: true,
 		nav: false,
 		dots: true,
@@ -51,7 +51,7 @@ $(window).on('load', function() {
 		items: 1,
 		autoplay: true
 	});
-	var dot = $('.hero-slider .owl-dot');
+	var dot = $('.about-game-slider .owl-dot');
 	dot.each(function() {
 		var index = $(this).index() + 1;
 		if(index < 10){
